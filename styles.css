@@ -1,15 +1,13 @@
 body {
 	background-color: lightblue;
 	margin: 0px;
-
 }
 
-
 .header {
-	font-size: 24px;
+	font-size: 46px;
+	font-weight: bold;
 	text-align: center;
-	padding: 24px;
-	background-color: lightpink;
+	padding: 24px
 }
 
 .choose-container {
@@ -35,9 +33,6 @@ img {
 	text-align: center;
 	font-size: 24px;
 	padding: 12px;
-}
-.score-header {
-	
 }
 
 .score-container {
