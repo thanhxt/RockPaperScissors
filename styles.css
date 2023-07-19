@@ -1,0 +1,12 @@
+body {
+	background-color: WHITE;
+}
+
+.header {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+button {
+	size: 24px;
+}
