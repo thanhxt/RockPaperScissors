@@ -6,8 +6,6 @@ What did i learn out of it:
 - Deepened the basic structure of Javascript and how function are build
 
 ## Second Stage | Implementing Game with an User Interface
-Benefits:
+What did i learn out of it:
 - DOM Manipulations
 - adding Events
-
-## Summary
