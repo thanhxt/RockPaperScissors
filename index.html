@@ -7,18 +7,31 @@
 </head>
 
 <body>
-	<div id="header">
+	<div class="header">
 		ROCK PAPER SCISSORS
 	</div>
-	<div id="choose-container">
-		<button>Rock</button>
-		<button>Paper</button>
-		<button>Scissors</button>
+	<div class="choose-container">
+		<button class="Rock" id="Rock">
+			<img src="images/Rock.png" alt="">
+		</button>
+		<button class="Paper" id="Paper">
+			<img src="images/Paper.png" alt="">
+		</button>
+		<button class="Scissors" id="Scissors">
+			<img src="images/Scissors.png" alt="">
+		</button>
 	</div>
-	
-	<div id="Score"></div>
-	
-	
+
+	<div class="score">
+		<div class="score-header">Score</div>
+		<div class="score-container">
+			<div class="score-player">0</div>
+			<div>-</div>
+			<div class="score-computer">0</div>	
+		</div>
+		<div class="score-footer"></div>
+	</div>
+
 	<script src="./script.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,12 +1,48 @@
 body {
-	background-color: WHITE;
+	background-color: lightblue;
+	margin: 0px;
+
 }
+
 
 .header {
 	font-size: 24px;
-	font-weight: bold;
+	text-align: center;
+	padding: 24px;
+	background-color: lightpink;
+}
+
+.choose-container {
+	display: flex;
+	justify-content: center;
+	padding: 24px;
+	gap: 24px;
 }
 
 button {
-	size: 24px;
+	background: transparent;
+	border: none !important;
+	font-size: 0;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 15%;
+}
+
+.score {
+	text-align: center;
+	font-size: 24px;
+	padding: 12px;
+}
+.score-header {
+	
+}
+
+.score-container {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	font-size: 24px;
 }
