@@ -7,6 +7,7 @@ let playerScore = 0;
 let scoreFooterHTML = document.getElementsByClassName("score-footer");
 let scoreFotter = "";
 /**
+ * Makes a Random Choice for Computer
  * 
  * @returns Rock || Paper || Scissors
  */
@@ -20,12 +21,6 @@ function getComputerChoice() {
 		case 3:
 			return "Scissors";
 	}
-}
-
-function playRound(playerSelection,computerSelection) {
-	//turning the playerSelection into Rock || Paper || Scissors
-	let player = playerSelection.toLowerCase();
-	player = player.charAt(0).toUpperCase() + player.slice(1);
 }
 
 /**
@@ -75,16 +70,27 @@ function checkWin(player,computer){
 		return 2;
 }
 
+/**
+ * Increments PlayerScore and Updates it in HTML
+ */
 function playerInc(){
 	playerScore++;
 	playerScoreHTML[0].innerHTML= playerScore.toString();
 }
-
+ /**
+  * Increments ComputerScore and Updates it in HTML
+  */
 function computerInc(){
 	computerScore++;
 	computerScoreHTML[0].innerHTML = computerScore.toString();
 }
 
+
+/**
+ * Main Game function 
+ * 
+ * @param {*} playerSelection Rock || Paper || Scissors
+ */
 function game(playerSelection) {
 	const computerSelection = getComputerChoice();
 	let win = checkWin(playerSelection,computerSelection);
@@ -115,30 +121,9 @@ function game(playerSelection) {
 	}
 }
 
-if (checkScore(playerScore,computerScore) == 0){
 	document.getElementById("Rock").onclick = function() {
 		game("Rock");
-	}
-
 	document.getElementById("Paper").onclick = function() {
 		game("Paper");
-	}
-
 	document.getElementById("Scissors").onclick = function() {
 		game("Scissors");
-	}
-}
-
-/**
- * (1) Player picking Rock || Paper || Scissors by Button
- * 	(1.1) Function ->  Game(player)
- * 				   -> checkWin()
- * 				   
- * (2) getScore + Update -> .innerHTML
- * (3) checkScore() at the End of Game(player)
- * 	(3.1) if score == 5 -> Player || Computer -> lose
- * 
- * 
- */
-
-// console.log(getComputerChoice());
