@@ -121,9 +121,12 @@ function game(playerSelection) {
 	}
 }
 
-	document.getElementById("Rock").onclick = function() {
-		game("Rock");
-	document.getElementById("Paper").onclick = function() {
-		game("Paper");
-	document.getElementById("Scissors").onclick = function() {
-		game("Scissors");
+document.getElementById("Rock").onclick = function() {
+	game("Rock");
+}
+document.getElementById("Paper").onclick = function() {
+	game("Paper");
+}
+document.getElementById("Scissors").onclick = function() {
+	game("Scissors");
+}
